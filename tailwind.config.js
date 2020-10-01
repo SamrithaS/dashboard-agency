@@ -9,9 +9,13 @@ module.exports = {
       xl: { max: "1279px" },
 
       lg: { max: "1023px" },
-
       md: { max: "767px" },
       sm: { max: "620px" }
+    },
+    textColor: {
+      primary: "#3490dc",
+      secondary: "#ffed4a",
+      danger: "#e3342f"
     }
   },
 
