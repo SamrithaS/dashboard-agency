@@ -1,4 +1,5 @@
 module.exports = {
+  purge: [],
   theme: {
     boxShadow: {
       g: "0px 0.5px 2px rgba(0, 0, 0, 0.3), 0px 2px 4px rgba(0, 0, 0, 0.04)",
@@ -12,7 +13,7 @@ module.exports = {
       md: { max: "767px" },
       sm: { max: "620px" }
     },
-    textColor: {
+    colors: {
       primary: "#3490dc",
       secondary: "#ffed4a",
       danger: "#e3342f"
