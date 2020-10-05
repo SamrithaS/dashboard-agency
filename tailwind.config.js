@@ -16,7 +16,20 @@ module.exports = {
         sm: { max: "620px" }
       },
       colors: {
-        primary: "#ccc"
+        primary: "#58666F",
+        blackish:"#2B3942",
+        grey:"#F2F5F7",
+        grey2:"#808C94",
+        white:"#FFFFFF",
+        darkgreen:'#1F513A',
+        lightgreen:'#DCF9E5'
+      },
+      fontSize: {
+        fifteen:'15px',
+        twentyeight:'28px',
+        twentytwo:'22px',
+        thirteen:'13px',
+        eighteen:'18px'
       }
     },
     boxShadow: {
@@ -24,6 +37,9 @@ module.exports = {
       xs: "inset 0px -1px 0px #E3E9ED"
     }
   },
-  variants: {},
+  variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    textColor: ['responsive', 'hover', 'focus', 'active'],
+  },
   plugins: []
 };
