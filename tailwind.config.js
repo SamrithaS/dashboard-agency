@@ -29,7 +29,8 @@ module.exports = {
         twentyeight:'28px',
         twentytwo:'22px',
         thirteen:'13px',
-        eighteen:'18px'
+        eighteen:'18px',
+        twentyfour:'24px'
       }
     },
     boxShadow: {
