@@ -12,7 +12,7 @@ module.exports = {
 
         lg: { max: "1023px" },
 
-        md: { max: "767px" },
+        md: { max: "768px" },
         sm: { max: "620px" }
       },
       colors: {
@@ -36,6 +36,11 @@ module.exports = {
     boxShadow: {
       g: "0px 0.5px 2px rgba(0, 0, 0, 0.3), 0px 2px 4px rgba(0, 0, 0, 0.04)",
       xs: "inset 0px -1px 0px #E3E9ED"
+    },
+    
+    margin:{
+      important: true,
+      'auto':'auto'
     }
   },
   variants: {

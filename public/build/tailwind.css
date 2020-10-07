@@ -45634,7 +45634,7 @@ video {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .md\:container {
     width: 100%;
   }
@@ -135601,3 +135601,4 @@ video {
             animation: bounce 1s infinite;
   }
 }
+
