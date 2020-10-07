@@ -6,14 +6,18 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+  
+      margin:{
+        '88':'3.625rem'
+      },
+      padding:{
+        '88':'12.5rem'
+      },
       screens: {
-        xs: { max: "520px" },
-        xl: { max: "1279px" },
-
         lg: { max: "1023px" },
-
-        md: { max: "768px" },
-        sm: { max: "620px" }
+        md: { max: "921px" },
+        sm: { max: "589px" },
+        xs: { max: "479px" }
       },
       colors: {
         primary: "#58666F",
@@ -31,17 +35,22 @@ module.exports = {
         thirteen:'13px',
         eighteen:'18px',
         twentyfour:'24px'
-      }
+      },
+      maxWidth: {
+           '5xl':'69.375rem',
+           '7xl':'57rem',
+           's':'16rem'
+              }
     },
+   
     boxShadow: {
       g: "0px 0.5px 2px rgba(0, 0, 0, 0.3), 0px 2px 4px rgba(0, 0, 0, 0.04)",
       xs: "inset 0px -1px 0px #E3E9ED"
     },
-    
-    margin:{
-      important: true,
-      'auto':'auto'
-    }
+    borderRadius:{
+      md:'8px'
+    },
+   
   },
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'active'],
