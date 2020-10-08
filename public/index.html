@@ -22,14 +22,14 @@
             fill="white" />
           <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1837 9H12.104V18.9707L15.1837 16.3404V9Z" fill="white" />
         </svg>
-        <div class="flex items-center space-x-2 "><svg class="hidden lg:flex" width="24" height="24" viewBox="0 0 24 24"
+        <div class="flex items-center space-x-2 "><svg class="hidden lg:flex" onclick="menu()" width="24" height="24" viewBox="0 0 24 24"
             fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 19.5H21M3 5.5H21H3ZM3 12.5H21H3Z" stroke="#2B3942" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
           </svg>
           <h3 class="hidden font-bold text-twentytwo sm:block">Dashboard</h3>
         </div>
-        <div class="flex items-center ">
+        <div class="flex items-center cursor-pointer" onmouseover="hovered()" onmouseout="unhovered()">
           <div class="pr-2 text-right">
             <p class="text-fifteen sm:hidden">Maria Gracia</p>
             <span class="text-thirteen text-primary sm:hidden">Admin</span>
@@ -45,8 +45,93 @@
         </div>
       </div>
     </nav>
+    <div class="absolute z-10 hidden max-w-xs bg-white rounded-md shadow-rect" id="grid1">
+      <ul>
+
+        <li class="">
+          <a href=""
+            class="flex items-center px-4 py-2 space-x-3 text-white rounded-md bg-blackish active:bg-blackish active:text-white ">
+            <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="20" height="20" fill="#C4C4C4" fill-opacity="0.01" />
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M3.4375 4.25781C3.4375 4.04025 3.52393 3.8316 3.67776 3.67776C3.8316 3.52393 4.04025 3.4375 4.25781 3.4375H15.7422C15.9597 3.4375 16.1684 3.52393 16.3222 3.67776C16.4761 3.8316 16.5625 4.04025 16.5625 4.25781V5.89844C16.5625 6.116 16.4761 6.32465 16.3222 6.47849C16.1684 6.63232 15.9597 6.71875 15.7422 6.71875H4.25781C4.04025 6.71875 3.8316 6.63232 3.67776 6.47849C3.52393 6.32465 3.4375 6.116 3.4375 5.89844V4.25781ZM3.4375 10.8203C3.4375 10.6028 3.52393 10.3941 3.67776 10.2403C3.8316 10.0864 4.04025 10 4.25781 10H9.17969C9.39725 10 9.6059 10.0864 9.75974 10.2403C9.91357 10.3941 10 10.6028 10 10.8203V15.7422C10 15.9597 9.91357 16.1684 9.75974 16.3222C9.6059 16.4761 9.39725 16.5625 9.17969 16.5625H4.25781C4.04025 16.5625 3.8316 16.4761 3.67776 16.3222C3.52393 16.1684 3.4375 15.9597 3.4375 15.7422V10.8203ZM13.2812 10.8203C13.2812 10.6028 13.3677 10.3941 13.5215 10.2403C13.6754 10.0864 13.884 10 14.1016 10H15.7422C15.9597 10 16.1684 10.0864 16.3222 10.2403C16.4761 10.3941 16.5625 10.6028 16.5625 10.8203V15.7422C16.5625 15.9597 16.4761 16.1684 16.3222 16.3222C16.1684 16.4761 15.9597 16.5625 15.7422 16.5625H14.1016C13.884 16.5625 13.6754 16.4761 13.5215 16.3222C13.3677 16.1684 13.2812 15.9597 13.2812 15.7422V10.8203Z"
+                  fill="white" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="15" height="15" fill="white" transform="translate(2.5 2.5)" />
+                </clipPath>
+              </defs>
+            </svg>
+
+
+            <p class="font-normal text-fifteen ">Dashboard</p>
+          </a>
+        </li>
+
+        <a href="">
+          <li
+            class="flex items-center px-4 py-2 my-1 space-x-2 bg-white rounded-md hover:bg-grey active:bg-blackish active:text-white text-primary">
+            <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="20" height="20" fill="#C4C4C4" fill-opacity="0.01" />
+              <path
+                d="M14 16H18V14.5C18 14.0324 17.8445 13.5764 17.5553 13.1955C17.2661 12.8145 16.8575 12.5275 16.3862 12.3743C15.9149 12.2211 15.4045 12.2094 14.9258 12.3408C14.4471 12.4721 14.024 12.74 13.7152 13.1073M14 16H6M14 16V14.5C14 14.008 13.8992 13.5378 13.7152 13.1073M13.7152 13.1073C13.4181 12.4112 12.9054 11.8146 12.2432 11.3943C11.581 10.9741 10.7997 10.7495 10 10.7495C9.20033 10.7495 8.41901 10.9741 7.7568 11.3943C7.0946 11.8146 6.58188 12.4112 6.2848 13.1073M6 16H2V14.5C2.00004 14.0324 2.15547 13.5764 2.44469 13.1955C2.73391 12.8145 3.14255 12.5275 3.6138 12.3743C4.08505 12.2211 4.5955 12.2094 5.07419 12.3408C5.55288 12.4721 5.97602 12.74 6.2848 13.1073M6 16V14.5C6 14.008 6.1008 13.5378 6.2848 13.1073M12.4 6.25C12.4 6.84674 12.1471 7.41903 11.6971 7.84099C11.247 8.26295 10.6365 8.5 10 8.5C9.36348 8.5 8.75303 8.26295 8.30294 7.84099C7.85286 7.41903 7.6 6.84674 7.6 6.25C7.6 5.65326 7.85286 5.08097 8.30294 4.65901C8.75303 4.23705 9.36348 4 10 4C10.6365 4 11.247 4.23705 11.6971 4.65901C12.1471 5.08097 12.4 5.65326 12.4 6.25ZM17.2 8.5C17.2 8.89782 17.0314 9.27936 16.7314 9.56066C16.4313 9.84196 16.0243 10 15.6 10C15.1757 10 14.7687 9.84196 14.4686 9.56066C14.1686 9.27936 14 8.89782 14 8.5C14 8.10218 14.1686 7.72064 14.4686 7.43934C14.7687 7.15804 15.1757 7 15.6 7C16.0243 7 16.4313 7.15804 16.7314 7.43934C17.0314 7.72064 17.2 8.10218 17.2 8.5ZM6 8.5C6 8.89782 5.83143 9.27936 5.53137 9.56066C5.23131 9.84196 4.82435 10 4.4 10C3.97565 10 3.56869 9.84196 3.26863 9.56066C2.96857 9.27936 2.8 8.89782 2.8 8.5C2.8 8.10218 2.96857 7.72064 3.26863 7.43934C3.56869 7.15804 3.97565 7 4.4 7C4.82435 7 5.23131 7.15804 5.53137 7.43934C5.83143 7.72064 6 8.10218 6 8.5Z"
+                stroke="#58666F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <p class="font-normal text-fifteen ">Agency Profile</p>
+          </li>
+        </a>
+        <a href="">
+          <li
+            class="flex items-center px-4 py-2 my-1 space-x-2 bg-white rounded-md hover:bg-grey active:bg-blackish active:text-white text-primary">
+            <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="20" height="20" fill="#C4C4C4" fill-opacity="0.01" />
+              <path
+                d="M17.5 11.3792C15.1171 12.3427 12.5704 12.8365 10 12.8333C7.3475 12.8333 4.81667 12.3167 2.5 11.3792M10 10.3333H10.0083M13.3333 5.33333V3.66667C13.3333 3.22464 13.1577 2.80072 12.8452 2.48816C12.5326 2.17559 12.1087 2 11.6667 2H8.33333C7.89131 2 7.46738 2.17559 7.15482 2.48816C6.84226 2.80072 6.66667 3.22464 6.66667 3.66667V5.33333H13.3333ZM4.16667 17H15.8333C16.2754 17 16.6993 16.8244 17.0118 16.5118C17.3244 16.1993 17.5 15.7754 17.5 15.3333V7C17.5 6.55797 17.3244 6.13405 17.0118 5.82149C16.6993 5.50893 16.2754 5.33333 15.8333 5.33333H4.16667C3.72464 5.33333 3.30072 5.50893 2.98816 5.82149C2.67559 6.13405 2.5 6.55797 2.5 7V15.3333C2.5 15.7754 2.67559 16.1993 2.98816 16.5118C3.30072 16.8244 3.72464 17 4.16667 17Z"
+                stroke="#58666F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <p class="font-normal text-fifteen ">Agents</p>
+          </li>
+        </a>
+        <a href="">
+          <li
+            class="flex items-center px-4 py-2 my-1 space-x-2 bg-white rounded-md hover:bg-grey active:bg-blackish active:text-white text-primary">
+            <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="20" height="20" fill="#C4C4C4" fill-opacity="0.01" />
+              <path
+                d="M6.66667 5.33333V2V5.33333ZM13.3333 5.33333V2V5.33333ZM5.83333 8.66667H14.1667H5.83333ZM4.16667 17H15.8333C16.2754 17 16.6993 16.8244 17.0118 16.5118C17.3244 16.1993 17.5 15.7754 17.5 15.3333V5.33333C17.5 4.89131 17.3244 4.46738 17.0118 4.15482C16.6993 3.84226 16.2754 3.66667 15.8333 3.66667H4.16667C3.72464 3.66667 3.30072 3.84226 2.98816 4.15482C2.67559 4.46738 2.5 4.89131 2.5 5.33333V15.3333C2.5 15.7754 2.67559 16.1993 2.98816 16.5118C3.30072 16.8244 3.72464 17 4.16667 17Z"
+                stroke="#58666F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <p class="font-normal text-fifteen ">Booking History</p>
+          </li>
+        </a>
+        <a href="">
+          <li
+            class="flex items-center px-4 py-2 my-1 space-x-2 bg-white rounded-md hover:bg-grey active:bg-blackish active:text-white text-primary">
+            <svg class="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="20" height="20" fill="#C4C4C4" fill-opacity="0.01" />
+              <path
+                d="M2 8.14286H18M5.55556 12.7857H7.51111M10 12.7857H11.9556M4.66667 16.5H15.3333C16.0406 16.5 16.7189 16.2065 17.219 15.6841C17.719 15.1617 18 14.4531 18 13.7143V6.28571C18 5.5469 17.719 4.83834 17.219 4.31592C16.7189 3.79349 16.0406 3.5 15.3333 3.5H4.66667C3.95942 3.5 3.28115 3.79349 2.78105 4.31592C2.28095 4.83834 2 5.5469 2 6.28571V13.7143C2 14.4531 2.28095 15.1617 2.78105 15.6841C3.28115 16.2065 3.95942 16.5 4.66667 16.5Z"
+                stroke="#58666F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <p class="font-normal text-fifteen ">Payments</p>
+          </li>
+        </a>
+      </ul>
+    </div>
+   
     <div class="grid max-w-5xl grid-cols-10 gap-8 px-3 mx-auto mt-10 lg:block">
-      <div class="col-span-2 lg:hidden">
+      <div class="col-span-2 lg:hidden" >
         <ul>
 
           <li class="">
@@ -130,7 +215,18 @@
           </a>
         </ul>
       </div>
-      <div class="col-span-8 lg:col-span-10 lg:px-3 lg:mx-auto lg:max-w-7xl">
+      <div class="relative col-span-8 lg:col-span-10 lg:px-3 lg:mx-auto lg:max-w-7xl">
+          <div class="absolute right-0 hidden max-w-xs py-3 bg-white rounded-md -top-9 shadow-rect" id="hover">
+              <ul class="">
+                <li class="pb-2 pl-4 pr-20 shadow-login">
+                  <a href="">Profile</a>
+              
+                </li>
+                <li class="pt-2 pl-4 pr-20">
+                    <a href="">Logout</a>
+                </li>
+              </ul>
+                 </div>
         <div class="flex items-center justify-between ">
           <h3 class="font-bold text-twentyeight sm:hidden">Dashboard</h3>
           <button class="flex items-center py-1 pr-1 rounded-md text-thirteen text-primary bg-grey focus:outline-none">
@@ -379,6 +475,40 @@
     </div>
   </section>
   <script>
+    window.addEventListener("resize", myFunct);
+    var item=document.getElementById("grid1")
+var screenwidth = screen.width;
+var clicked;
+if(screenwidth > 1023){
+  item.classList.add('hidden')
+}
+function myFunct() {
+  var txt = screen.width
+  var item=document.getElementById("grid1")
+      
+  if(screen.width>1023){
+    item.classList.add('hidden')
+  }
+  else{
+    screenwidth=screen.width
+  }
+}
+function menu(){
+if (clicked==true){
+  clicked=false
+}
+else{
+  clicked=true
+}
+      var item=document.getElementById("grid1")
+      if(clicked==true && screenwidth<1023){
+        item.classList.remove('hidden')
+      }
+      else if(clicked==false && screenwidth<1023){
+        item.classList.add('hidden')
+      }
+      
+    }
     function myFunction() {
       var element = document.getElementById("toggle1");
       var elem = document.getElementById("toggle2");
@@ -437,6 +567,14 @@
       copyText.setSelectionRange(0, 99999)
       document.execCommand("copy");
     }
+   function hovered(){
+     item=document.getElementById('hover')
+     item.classList.remove('hidden')
+   }
+   function unhovered(){
+     item=document.getElementById('hover')
+     item.classList.add('hidden')
+   }
   </script>
 </body>
 
